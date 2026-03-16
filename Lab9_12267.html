@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Movie Website</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+
+.banner{
+background:url("https://cdn.mos.cms.futurecdn.net/JtLy9jfJ3TBSKpmmzhvDqF.jpg") center/cover;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-shadow:2px 2px 10px black;
+}
+
+footer{
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.social-icons a{
+color:white;
+font-size:28px;
+margin:0 15px;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+transform:scale(1.3);
+}
+
+.facebook:hover{
+color:#1877f2;
+}
+
+.instagram:hover{
+color:#e4405f;
+}
+
+.line:hover{
+color:#00c300;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center" href="#">
+
+<img src="https://www.spu.ac.th/wp-content/uploads/2024/12/new_logo_spu08.png"
+width="120"
+class="me-2">
+<a class="navbar-brand" href="#"> Movie</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+ภาพยนตร์
+</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item">ล้วงลับเวทีลวง</a></li>
+<li><a class="dropdown-item">เซลล์ขยันพันธุ์เดือด</a></li>
+<li><a class="dropdown-item">Gundam Seed Freedom Special Edition</a></li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">ติดต่อเรา</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- Banner -->
+<section class="banner">
+<div class="text-center">
+<h1>เว็บไซต์ภาพยนตร์ยอดนิยม</h1>
+<p>รวมหนังดัง รีวิวหนังใหม่ และตัวอย่างภาพยนตร์</p>
+</div>
+</section>
+
+<!-- Movie Cards -->
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">ภาพยนตร์แนะนำ</h2>
+
+<div class="row">
+
+<!-- Movie 1 -->
+<div class="col-md-4">
+<div class="card">
+
+<img src="https://cms.dmpcdn.com/dara/2025/02/14/15ba1330-ea89-11ef-9f12-4d183de11f96_webp_original.webp" class="card-img-top">
+
+<div class="card-body">
+<h5 class="card-title">ล้วงลับเวทีลวง</h5>
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movie1">
+ดูรายละเอียด
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- Movie 2 -->
+<div class="col-md-4">
+<div class="card">
+
+<img src="https://thisisgamethailand.com/wp-content/uploads/2025/03/ai_img_mainM_pc.jpg" class="card-img-top">
+
+<div class="card-body">
+<h5 class="card-title">เซลล์ขยันพันธุ์เดือด</h5>
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movie2">
+ดูรายละเอียด
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- Movie 3 -->
+<div class="col-md-4">
+<div class="card">
+
+<img src="https://external-preview.redd.it/mobile-suit-gundam-seed-freedom-special-edition-with-500-v0-ULnGyMra8pKDR7fN9bd9RhnpX2WTWn7GWscCbS_3XSM.jpg?width=1080&crop=smart&auto=webp&s=fec00ab56e7c92e62e4494624dbd0d842a49d522" class="card-img-top">
+
+<div class="card-body">
+<h5 class="card-title">Gundam Seed Freedom</h5>
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movie3">
+ดูรายละเอียด
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="movie1">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">ล้วงลับเวทีลวง</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<p><b>ผู้กำกับ:</b> อะตอม เอโกยัน</p>
+<p><b>นักแสดง:</b> อแมนด้า ไซฟรีด, รีเบ็คก้า ลิดเดียร์ด, ดักลาส สมิธ, มาร์ค โอไบรอัน</p>
+<p><b>เรื่องย่อ:</b> ภาพยนตร์แนวลึกลับเกี่ยวกับเบื้องหลังเวทีการแสดงที่เต็มไปด้วยความลับ</p>
+<img src="https://cms.dmpcdn.com/dara/2025/02/14/15ba1330-ea89-11ef-9f12-4d183de11f96_webp_original.webp" class="img-fluid">
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="movie2">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">เซลล์ขยันพันธุ์เดือด</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<p><b>ผู้กำกับ:</b> Hideki Takeuchi</p>
+<p><b>นักแสดง:</b> Mei Nagano รับบท เซลล์เม็ดเลือดแดง (Red Blood Cell)
+Takeru Satoh รับบท เซลล์เม็ดเลือดขาว (White Blood Cell)</p>
+<p><b>เรื่องย่อ:</b> เรื่องราวการต่อสู้ของเซลล์ในร่างกายเพื่อปกป้องมนุษย์จากเชื้อโรค</p>
+<img src="https://thisisgamethailand.com/wp-content/uploads/2025/03/ai_img_mainM_pc.jpg" class="img-fluid">
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="movie3">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Gundam Seed Freedom</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<p><b>ผู้กำกับ:</b> Mitsuo Fukuda</p>
+<p><b>นักแสดง:</b> Kira Yamato, Lacus Clyne</p>
+<p><b>เรื่องย่อ:</b> การต่อสู้ของโมบิลสูท Gundam เพื่อสร้างสันติภาพในจักรวาล</p>
+<img src="https://external-preview.redd.it/mobile-suit-gundam-seed-freedom-special-edition-with-500-v0-ULnGyMra8pKDR7fN9bd9RhnpX2WTWn7GWscCbS_3XSM.jpg?width=1080&crop=smart&auto=webp&s=fec00ab56e7c92e62e4494624dbd0d842a49d522" class="img-fluid">
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- About -->
+<section id="about" class="container mt-5">
+
+<h2>เกี่ยวกับเรา</h2>
+
+<p>
+เว็บไซต์ Movie เป็นเว็บไซต์ตัวอย่างสำหรับแนะนำภาพยนตร์
+รีวิวหนังใหม่ และรวบรวมข้อมูลภาพยนตร์ที่น่าสนใจ
+เพื่อให้ผู้ชมสามารถค้นหาหนังที่ต้องการได้ง่าย
+</p>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container mt-5">
+
+<h2>ติดต่อเรา</h2>
+
+<form>
+
+<div class="mb-3">
+<label>ชื่อ-นามสกุล</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Email</label>
+<input type="email" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>ข้อความ</label>
+<textarea class="form-control"></textarea>
+</div>
+
+<button class="btn btn-success">ส่งข้อมูล</button>
+
+</form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<div class="social-icons">
+
+<a href="https://facebook.com" target="_blank" class="facebook">
+<i class="fa-brands fa-facebook"></i>
+</a>
+
+<a href="https://instagram.com" target="_blank" class="instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://line.me" target="_blank" class="line">
+<i class="fa-brands fa-line"></i>
+</a>
+
+</div>
+
+<p class="mt-3">© 2025 Movie By 68042262</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
